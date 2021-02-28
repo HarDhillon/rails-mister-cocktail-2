@@ -12,7 +12,15 @@
 .banner-text{
   z-index: 2;
  background-color: wheat;
+ padding: 40px;
+ border-radius: 10px;
+
+ p{
+   display: flex;
+   justify-content: center;
+ }
 }
+
 
 .banner h1, p{
   position: relative;
