@@ -2,5 +2,7 @@ Rails.application.routes.draw do
   get 'pages/home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: 'pages#home'
-  resources :cocktails
+  resources :cocktails do
+    resources :doses, only: [:new, :create, :destory]
+  end
 end
