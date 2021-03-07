@@ -1,0 +1,7 @@
+<% @cocktails.each_with_index do |cocktail| %>
+  <%= link_to "/cocktails/#{cocktail.id}" do %>
+    <p><%= cocktail.name %></p>
+  <% end %>
+<% end %>
+
+<%= link_to "Create New Cocktail"  %>
